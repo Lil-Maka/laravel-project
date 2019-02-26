@@ -22,8 +22,6 @@
 			</div>
 		</div>
 	</div>
-	<footer id="footer" class="text-center">
-		<p>© 2019 Learning purposes</p>
-	</footer>
+	@include('inc.footer')
 </body>
 </html>

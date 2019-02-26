@@ -30,3 +30,6 @@ Route::get('/contact', function () {
     return view('contact');
     //return view('welcome');
 });
+
+
+Route::post('/contact/submit', 'MessagesController@submit');
