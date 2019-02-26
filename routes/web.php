@@ -26,7 +26,7 @@ Route::get('/home', function () {
 });
 
 //Lo que irá a en la dirección url
-Route::get('/route', function () {
+Route::get('/contact', function () {
     return view('contact');
     //return view('welcome');
 });
