@@ -2,7 +2,7 @@
 
 @section('content')
 	<h1>Home</h1>
-	Pruebas extras
+	Pruebas extras 2
 @endsection
 
 @section('sidebar')
