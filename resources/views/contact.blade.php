@@ -7,7 +7,7 @@
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis molestiae culpa quasi architecto unde, quae, aut amet quibusdam repellendus est reprehenderit magnam iste beatae assumenda omnis earum repudiandae qui laudantium.
 	</p>
 
-	{!! Form::open(['url' => 'contact/submit']) !!}
+	{!! Form::open(['url' => '/contact/submit']) !!}
 		<div class="form-group">
 	    	{{Form::label('name', 'Nombre')}}
 	    	{{Form::text('name',  '', ['class'=>'form-control'])}}
