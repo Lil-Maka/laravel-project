@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Message;
 
 class MessagesController extends Controller
 {
@@ -11,8 +12,21 @@ class MessagesController extends Controller
     	//return $request->input('name');
     	$this->validate($request,[
     		'name' => 'required',
-    		'email' => 'required'
+    		'email' => 'required',
+    		'message' => 'required'
     	]);	
-    	return 'Molt bé';
+    	//Migr version . return 'Molt bé';
+        
+        // Crear un nou missatge
+        $message = new Message;
+        $message->name = $request->input('name');
+        $message->email = $request->input('email');
+        $message->message = $request->input('message');
+
+        // Guardar missatge
+        $message->save();
+
+        // Redirect
+        return redirect('/home')->with('correcte', 'Message Sent');
     }
 }
