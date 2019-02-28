@@ -10670,3 +10670,7 @@ a.text-dark:focus {
   width: 100%;
 }
 
+.navbar-dark .navbar-brand {
+  color: red;
+}
+
