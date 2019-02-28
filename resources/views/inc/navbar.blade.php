@@ -7,17 +7,17 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="{{Request::is('home') ? 'nav-item active' : 'nav-item'}}">
-        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="{{Request::is('about') ? 'nav-item active' : 'nav-item'}}">
-        <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a></a>
+        <a class="nav-link" href="about">About<span class="sr-only">(current)</span></a></a>
       </li>
       <li class="{{Request::is('contact') ? 'nav-item active' : 'nav-item'}}">
-        <a class="nav-link" href="/contact">Contact<span class="sr-only">(current)</span></a></a>
+        <a class="nav-link" href="contact">Contact<span class="sr-only">(current)</span></a></a>
         <!--<a class="nav-link disabled" href="/contact" tabindex="-1" aria-disabled="true">Contact</a>-->
       </li>
       <li class="{{Request::is('messages') ? 'nav-item active' : 'nav-item'}}">
-        <a class="nav-link" href="/messages">Missatges<span class="sr-only">(current)</span></a></a>
+        <a class="nav-link" href="messages">Missatges<span class="sr-only">(current)</span></a></a>
         <!--<a class="nav-link disabled" href="/contact" tabindex="-1" aria-disabled="true">Contact</a>-->
       </li>
       <!--<li class="nav-item dropdown">

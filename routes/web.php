@@ -16,12 +16,12 @@ Route::get('/', function () {
     //return view('welcome');
 });
 
-Route::get('/about', 'PagesController@getAbout');
-Route::get('/home', 'PagesController@getHome');
+Route::get('about', 'PagesController@getAbout');
+Route::get('home', 'PagesController@getHome');
 
 //Lo que irá a en la dirección url
-Route::get('/contact', 'PagesController@getContact');
-Route::get('/messages', 'MessagesController@getMessages');
+Route::get('contact', 'PagesController@getContact');
+Route::get('messages', 'MessagesController@getMessages');
 
 
 Route::post('/contact/submit', 'MessagesController@submit');
