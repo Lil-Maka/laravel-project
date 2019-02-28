@@ -7,10 +7,10 @@ use App\Message;
 
 class MessagesController extends Controller
 {
-    public function submit(Request $request){
+    public function submit(Request $obtencio){
     	
     	//return $request->input('name');
-    	$this->validate($request,[
+    	$this->validate($obtencio,[
     		'name' => 'required',
     		'email' => 'required',
     		'message' => 'required'
@@ -19,15 +19,15 @@ class MessagesController extends Controller
         
         // Crear un nou missatge
         $message = new Message;
-        $message->name = $request->input('name');
-        $message->email = $request->input('email');
-        $message->message = $request->input('message');
+        $message->name = $obtencio->input('name');
+        $message->email = $obtencio->input('email');
+        $message->message = $obtencio->input('message');
 
         // Guardar missatge
         $message->save();
 
         // Redirect
-        return redirect('/home')->with('correcte', 'Message Sent');
+        return redirect('/home')->with('correcte', 'Missatge enviat');
     }
 
     public function getMessages(){
