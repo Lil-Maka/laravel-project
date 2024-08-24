@@ -25,3 +25,5 @@ Route::get('messages', 'MessagesController@getMessages');
 
 
 Route::post('/contact/submit', 'MessagesController@submit');
+
+// Test
